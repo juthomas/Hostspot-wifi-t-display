@@ -72,11 +72,11 @@ const char *APpassword = "44448888";
 
 
 
-WiFiUDP Udp;
-unsigned int localUdpPort = 49141;
-char incomingPacket[255];
-String convertedPacket;
-char  replyPacket[] = "Message received";
+// WiFiUDP Udp;
+// unsigned int localUdpPort = 49141;
+// char incomingPacket[255];
+// String convertedPacket;
+// char  replyPacket[] = "Message received";
 
 
 void set_pwm0(int pwm);
@@ -249,7 +249,7 @@ void drawNetworkActivity()
     }
     drawing_sprite.setTextColor(TFT_BLUE);
  
-    drawing_sprite.print("\nIP: ");  
+    drawing_sprite.print("\nIP:  ");  
     drawing_sprite.setTextColor(TFT_WHITE);
 
     drawing_sprite.println(ip4addr_ntoa(&(station.ip)));    
